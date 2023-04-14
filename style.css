@@ -10,7 +10,7 @@
     background: #f3f5fc;
 }
 
-.text {
+.texto {
     position: absolute;
     width: 42%;
     height: 60%;
@@ -25,17 +25,17 @@
     background-color: #f3f5fc;
 }
 
-.text::placeholder {
+.texto::placeholder {
     color: #0a3871;
 }
 
-.text:focus,
-.text:active {
+.texto:focus,
+.texto:active {
     border: none;
     outline: none;
 }
 
-.terms {
+.terminos {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -47,7 +47,7 @@
     top: 80%;
 }
 
-.terms p {
+.terminos p {
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
@@ -60,7 +60,7 @@
     flex-grow: 0;
 }
 
-.button {
+.botones {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -71,7 +71,7 @@
     top: 82%;
 }
 
-.btn-encrypt {
+.btn-encriptar {
     align-items: center;
     justify-content: center;
     padding: 2%;
@@ -86,7 +86,7 @@
     color: #fff;
 }
 
-.btn-decrypt {
+.btn-desencriptar {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -106,14 +106,14 @@
     color: #0a3871;
 }
 
-.btn-decrypt:hover,
-.btn-encrypt:hover {
+.btn-desencriptar:hover,
+.btn-encriptar:hover {
     margin: 0.3%;
     width: 24.5%;
     padding: 1.8%;
 }
 
-.encrypted {
+.encriptado {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -126,7 +126,7 @@
     border-radius: 32px;
 }
 
-.encrypted-message {
+.mensaje-encriptado {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,9 +137,9 @@
     width: 100%;
     top: 65%;
     text-align: center;
-}
+}   
 
-.encrypted-message h2 {
+.mensaje-encriptado h2 {
     width: 60%;
     font-family: "Inter";
     font-style: normal;
@@ -148,9 +148,9 @@
     line-height: 120%;
     text-align: center;
     color: #343a40;
-}
+}   
 
-.encrypted-message p {
+.mensaje-encriptado p {
     width: 80%;
     font-family: "Inter";
     font-style: normal;
@@ -161,7 +161,7 @@
     color: #495057;
 }
 
-.encrypted img {
+.encriptado img {
     position: absolute;
     width: 80%;
     height: 50%;
@@ -169,57 +169,55 @@
 }
 
 /* Responsive design */
-
-
 @media (max-width: 57.5em) {
     .container {
         display: flex;
         flex-direction: row;
     }
-    .encrypted {
+    .encriptar {
         width: 100%;
     }
-    .text {
+    .texto {
         width: 80%;
         height: 60%;
         left: 10%;
         top: 5%;
-    }
-    .terms {
+    } 
+    .terminos {
         width: 80%;
         left: 10%;
         top: 67%;
     }
-    .terms p {
+    .terminos p {
         font-size: 16px;
     }
-    .button {
+    .botones {
         width: 80%;
         left: 10%;
         top: 70%;
     }
-    .btn-encrypt,
-    .btn-decrypt {
+    .btn-encriptar,
+    .btn-desencriptar {
         width: 48%;
         border-radius: 16px;
     }
-    .btn-encrypt:hover,
-    .btn-decrypt:hover {
+    .btn-encriptar:hover,
+    .btn-desencriptar:hover {
         margin: 0.3%;
         width: 47.5%;
         padding: 1.8%;
     }
-    .encrypted {
+    .encriptado {
         width: 80%;
         height: 15%;
         left: 10%;
         top: 80%;
     }
-    .encrypted-message {
+    .mensaje-encriptado {
         width: 100%;
         top: 5%;
     }
-    .encrypted img {
+    .encriptado img {
         top: 0;
         display: none;
         visibility: hidden;

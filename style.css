@@ -168,6 +168,19 @@
     top: 15%;
 }
 
+#btn-copiar {
+    background-color: #4CAF50; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color de texto */
+    padding: 10px 20px; /* Espacio alrededor del contenido */
+    text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como bloque */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 10px; /* Margen */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+}  
+
 /* Responsive design */
 @media (max-width: 57.5em) {
     .container {

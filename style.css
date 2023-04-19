@@ -106,8 +106,29 @@
     color: #0a3871;
 }
 
+#btn-copiar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3%;
+    gap: 8px;
+    width: 20%;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 40px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;/* Cambiar el cursor al pasar por encima */
+}  
+
 .btn-desencriptar:hover,
-.btn-encriptar:hover {
+.btn-encriptar:hover,
+.btn-copiar:hover {
     margin: 0.3%;
     width: 24.5%;
     padding: 1.8%;
@@ -168,18 +189,7 @@
     top: 15%;
 }
 
-#btn-copiar {
-    background-color: #4CAF50; /* Color de fondo */
-    border: none; /* Sin borde */
-    color: white; /* Color de texto */
-    padding: 10px 20px; /* Espacio alrededor del contenido */
-    text-align: center; /* Centrar el texto */
-    text-decoration: none; /* Sin subrayado */
-    display: inline-block; /* Mostrar como bloque */
-    font-size: 16px; /* Tamaño de fuente */
-    margin: 10px; /* Margen */
-    cursor: pointer; /* Cambiar el cursor al pasar por encima */
-}  
+
 
 /* Responsive design */
 @media (max-width: 57.5em) {
@@ -210,12 +220,14 @@
         top: 70%;
     }
     .btn-encriptar,
-    .btn-desencriptar {
+    .btn-desencriptar, 
+    .btn-copiar {
         width: 48%;
         border-radius: 16px;
     }
     .btn-encriptar:hover,
-    .btn-desencriptar:hover {
+    .btn-desencriptar:hover,
+    .btn-copiar:hover {
         margin: 0.3%;
         width: 47.5%;
         padding: 1.8%;
